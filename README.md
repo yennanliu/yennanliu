@@ -1,4 +1,5 @@
-### ⚡ Data System ⚡ Backend Stuff ⚡  Fun things
+### ⚡ Data System | Backend Stuff | Fun things
+  Hello I'm Yen, I build platform help people solve problems. 
 
 <!--
 **yennanliu/yennanliu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
