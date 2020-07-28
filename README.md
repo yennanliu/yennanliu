@@ -1,8 +1,8 @@
-> Hello I'm Yen, I build platforms for solving problems.
-  
 ```
 Data System && Backend && Fun things
 ```
+
+> Hello I'm Yen, I build platforms for solving problems.
 
 <!--
 **yennanliu/yennanliu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
