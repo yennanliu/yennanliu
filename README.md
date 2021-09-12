@@ -4,10 +4,8 @@ Data System && Backend && Fun things
 
 > Hello I'm Yen, I build platforms for solving problems.
 
-```scala
-"""
-helo wworld!
-"""
+```bash
+# Hello I'm Yen, I build platforms for solving problems.
 ```
 
 <!--
