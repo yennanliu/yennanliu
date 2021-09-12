@@ -2,10 +2,8 @@
 Data System && Backend && Fun things
 ```
 
-> Hello I'm Yen, I build platforms for solving problems.
-
-```bash
-# Hello I'm Yen, I build platforms for solving problems.
+```scala
+println("Hello I'm Yen, I build platforms for solving problems.")
 ```
 
 <!--
