@@ -3,7 +3,6 @@ Data System && Backend && Fun things
 ```
 
 ```scala
-/** test */
 println("Hello I'm Yen, I build platforms for solving problems.")
 ```
 
