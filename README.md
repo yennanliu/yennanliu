@@ -3,7 +3,7 @@ Data System && Backend && Fun things
 ```
 
 ```scala
-println("Hello I'm Yen, I build platforms for solving problems.")
+println("Hello this is Yen, I build platforms for solving problems.")
 ```
 
 <!--
