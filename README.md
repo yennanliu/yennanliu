@@ -3,7 +3,6 @@ Data/Backend && Fun things
 ```
 
 ```scala
-/** Data/Backend && Fun things */
 println("Hello this is Yen, I build platforms for solving problems.")
 ```
 
