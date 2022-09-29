@@ -3,8 +3,7 @@ Data/Backend && Fun things
 ```
 
 ```scala
- /** 123 */
- 
+
 println("Hello this is Yen, I build platforms for solving problems.")
 ```
 
