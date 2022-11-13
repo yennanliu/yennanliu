@@ -1,10 +1,10 @@
 ```
-Data/Backend && Fun things
+Backend development && Data engineering && system architecture
 ```
 
 ```scala
 
-println("Hello this is Yen, I build platforms for solving problems.")
+println("Helo this is Yen, I build platforms for solving problems.")
 ```
 
 <!--
