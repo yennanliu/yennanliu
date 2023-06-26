@@ -15,9 +15,13 @@ object myStack extends App {
   case class SystemArchitecture(name: String) extends Skill
 
   def run(name: Skill): String = name match {
+  
     case BackendDevelopment(name) => "build backend services with JVM, Python"
+    
     case DataEngineering(name) => "big data, streaming, data platform development"
+    
     case SystemArchitecture(name) => "system design, product ownership"
+    
     case _ => "other awesome works"
   }
 ```
