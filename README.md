@@ -43,17 +43,6 @@ public class MyStack {
             emitter.onComplete();
         });
     }
-
-    public static void main(String[] args) {
-        Skill backendDev = new BackendDevelopment("Backend Development");
-        Skill dataEng = new DataEngineering("Data Engineering");
-        Skill sysArch = new SystemArchitecture("System Architecture");
-
-        run(backendDev).subscribe(System.out::println);
-        run(dataEng).subscribe(System.out::println);
-        run(sysArch).subscribe(System.out::println);
-    }
-}
 ```
 
 <!--
