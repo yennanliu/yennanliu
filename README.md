@@ -5,30 +5,55 @@ Others: <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img 
 CI/CD: <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a>
 
 
-```scala
+```java
+/** Heya this is Yen, I code backend for problem solving */
 
-/** Hellooo this is Yen, I build platforms for solving problems */
+import io.reactivex.rxjava3.core.Observable;
 
-object myStack extends App {
+public class MyStack {
 
-  sealed trait Skill
+    interface Skill {}
 
-  case class BackendDevelopment(name: String) extends Skill
+    static class BackendDevelopment implements Skill {
+        String name;
+        BackendDevelopment(String name) { this.name = name; }
+    }
 
-  case class DataEngineering(name: String) extends Skill
-  
-  case class SystemArchitecture(name: String) extends Skill
+    static class DataEngineering implements Skill {
+        String name;
+        DataEngineering(String name) { this.name = name; }
+    }
 
-  def run(name: Skill): String = name match {
-  
-    case BackendDevelopment(name) => "build backend services with JVM, Python"
-    
-    case DataEngineering(name) => "big data, streaming, data platform development"
-    
-    case SystemArchitecture(name) => "system design, product ownership"
-    
-    case _ => "other awesome works"
-  }
+    static class SystemArchitecture implements Skill {
+        String name;
+        SystemArchitecture(String name) { this.name = name; }
+    }
+
+    public static Observable<String> run(Skill skill) {
+        return Observable.create(emitter -> {
+            if (skill instanceof BackendDevelopment) {
+                emitter.onNext("build backend services with JVM, Python");
+            } else if (skill instanceof DataEngineering) {
+                emitter.onNext("big data, streaming, data platform development");
+            } else if (skill instanceof SystemArchitecture) {
+                emitter.onNext("system design, product ownership");
+            } else {
+                emitter.onNext("other awesome works");
+            }
+            emitter.onComplete();
+        });
+    }
+
+    public static void main(String[] args) {
+        Skill backendDev = new BackendDevelopment("Backend Development");
+        Skill dataEng = new DataEngineering("Data Engineering");
+        Skill sysArch = new SystemArchitecture("System Architecture");
+
+        run(backendDev).subscribe(System.out::println);
+        run(dataEng).subscribe(System.out::println);
+        run(sysArch).subscribe(System.out::println);
+    }
+}
 ```
 
 <!--
