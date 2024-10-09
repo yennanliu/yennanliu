@@ -5,44 +5,24 @@ Others: <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img 
 CI/CD: <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a>
 
 
-```java
+```scala
 /** Heya this is Yen, I code backend for problem solving */
 
-import io.reactivex.rxjava3.core.Observable;
+object SkillApp extends App {
 
-public class MyStack {
+  // Define a function to describe the skill
+  def describeSkill(skill: Skill): String = skill match {
+    case BackendDevelopment(name) => s"$name involves building backend services with JVM and Python."
+    case DataEngineering(name)    => s"$name focuses on big data, streaming, and data platform development."
+    case SystemArchitecture(name) => s"$name includes system design and product ownership."
+    case _                        => "Other awesome skills!"
+  }
 
-    interface Skill {}
-
-    static class BackendDevelopment implements Skill {
-        String name;
-        BackendDevelopment(String name) { this.name = name; }
-    }
-
-    static class DataEngineering implements Skill {
-        String name;
-        DataEngineering(String name) { this.name = name; }
-    }
-
-    static class SystemArchitecture implements Skill {
-        String name;
-        SystemArchitecture(String name) { this.name = name; }
-    }
-
-    public static Observable<String> run(Skill skill) {
-        return Observable.create(emitter -> {
-            if (skill instanceof BackendDevelopment) {
-                emitter.onNext("build backend services with JVM, Python");
-            } else if (skill instanceof DataEngineering) {
-                emitter.onNext("big data, streaming, data platform development");
-            } else if (skill instanceof SystemArchitecture) {
-                emitter.onNext("system design, product ownership");
-            } else {
-                emitter.onNext("other awesome works");
-            }
-            emitter.onComplete();
-        });
-    }
+  // Using the case classes
+  val backendDev = BackendDevelopment("Backend Development")
+  val dataEng = DataEngineering("Data Engineering")
+  val sysArch = SystemArchitecture("System Architecture")
+}
 ```
 
 <!--
