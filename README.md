@@ -8,20 +8,30 @@ CI/CD: <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img s
 ```scala
 /** Heya this is Yen, I code backend for problem solving */
 
+sealed trait Skill {
+  def description: String
+}
+
+case class BackendDevelopment(name: String) extends Skill {
+  def description: String = s"$name involves building backend services with JVM and Python."
+}
+
+case class DataEngineering(name: String) extends Skill {
+  def description: String = s"$name focuses on big data, streaming, and data platform development."
+}
+
+case class SystemArchitecture(name: String) extends Skill {
+  def description: String = s"$name includes system design and product ownership."
+}
+
 object SkillApp extends App {
+  val skills: List[Skill] = List(
+    BackendDevelopment("Backend Development"),
+    DataEngineering("Data Engineering"),
+    SystemArchitecture("System Architecture")
+  )
 
-  // Define a function to describe the skill
-  def describeSkill(skill: Skill): String = skill match {
-    case BackendDevelopment(name) => s"$name involves building backend services with JVM and Python."
-    case DataEngineering(name)    => s"$name focuses on big data, streaming, and data platform development."
-    case SystemArchitecture(name) => s"$name includes system design and product ownership."
-    case _                        => "Other awesome skills!"
-  }
-
-  // Using the case classes
-  val backendDev = BackendDevelopment("Backend Development")
-  val dataEng = DataEngineering("Data Engineering")
-  val sysArch = SystemArchitecture("System Architecture")
+  skills.foreach(s => println(s.description))
 }
 ```
 
