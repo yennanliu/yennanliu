@@ -18,7 +18,7 @@
 
 <p align="left">
   <!-- Primary Languages & Frameworks -->
-  <img src="https://skillicons.dev/icons?i=scala,java,python,spring,nodejs&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,python,spring,nodejs,scala&theme=dark" />
   <br>
   <!-- Cloud, Infra & Data -->
   <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,docker,kafka,mongodb,postgresql,githubactions&theme=dark" />
@@ -26,8 +26,8 @@
 
 ```json
 {
-  "runtime": ["Scala", "Java", "Python", "Go"],
+  "runtime": ["Java", "Python", "JavaScript", "Scala"],
   "platforms": ["AWS", "GCP", "Kubernetes"],
   "specialties": ["Big Data", "Distributed Systems", "AI Orchestration"],
-  "current_project": "Horizon AI - B2B Agentic Solutions"
+  "current_project": "AI - B2B Agentic Solutions"
 }
