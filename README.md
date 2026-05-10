@@ -1,44 +1,33 @@
-```scala
-/** Heya this is Yen, I code backend for problem solving */
+# ⚡ [SYSTEM_STATUS: ACTIVE]
 
-sealed trait Skill {
-  def description: String
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=9D5BFF&center=true&vCenter=true&width=600&lines=System.init(Senior_Backend_Engineer);Loading_Agentic_AI_Workflows...;Optimizing_Distributed_Systems;Executing_Horizon_AI_Logic" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%26%20MCP-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Stack-JVM%20%7C%20Python%20%7C%20Cloud-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Uptime-8_Years-green?style=for-the-badge">
+</p>
+
+---
+
+### 🛠️ Core Infrastructure & Tech Radar
+
+<p align="left">
+  <!-- Primary Languages & Frameworks -->
+  <img src="https://skillicons.dev/icons?i=scala,java,python,go,spring,nodejs&theme=dark" />
+  <br>
+  <!-- Cloud, Infra & Data -->
+  <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,docker,kafka,mongodb,postgresql,githubactions&theme=dark" />
+</p>
+
+```json
+{
+  "runtime": ["Scala", "Java", "Python", "Go"],
+  "platforms": ["AWS", "GCP", "Kubernetes"],
+  "specialties": ["Big Data", "Distributed Systems", "AI Orchestration"],
+  "current_project": "Horizon AI - B2B Agentic Solutions"
 }
-
-case class BackendDevelopment(name: String) extends Skill {
-  def description: String = s"$name involves building backend services with JVM and Python."
-}
-
-case class DataEngineering(name: String) extends Skill {
-  def description: String = s"$name focuses on big data, streaming, and data platform development."
-}
-
-case class SystemArchitecture(name: String) extends Skill {
-  def description: String = s"$name includes system design and product ownership."
-}
-
-object SkillApp extends App {
-  val skills: List[Skill] = List(
-    BackendDevelopment("Backend Development"),
-    DataEngineering("Data Engineering"),
-    SystemArchitecture("System Architecture")
-  )
-
-  skills.foreach(s => println(s.description))
-}
-```
-
-<!--
-**yennanliu/yennanliu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
