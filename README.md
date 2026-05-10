@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=9D5BFF&center=true&vCenter=true&width=600&lines=System.init(Senior_Backend_Engineer);Loading_Agentic_AI_Workflows...;Optimizing_Distributed_Systems;Executing_Horizon_AI_Logic" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=9D5BFF&center=true&vCenter=true&width=600&lines=System.init(Backend_Engineer);Loading_Agentic_AI_Workflows...;Optimizing_Distributed_Systems;AI_system" alt="Typing SVG" />
   </a>
 </p>
 
@@ -18,7 +18,7 @@
 
 <p align="left">
   <!-- Primary Languages & Frameworks -->
-  <img src="https://skillicons.dev/icons?i=scala,java,python,go,spring,nodejs&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=scala,java,python,spring,nodejs&theme=dark" />
   <br>
   <!-- Cloud, Infra & Data -->
   <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,docker,kafka,mongodb,postgresql,githubactions&theme=dark" />
